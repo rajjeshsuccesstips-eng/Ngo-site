@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Jan Shakti Sewa Samiti - Empowering communities in Bihar through education, social justice, health, women empowerment & environment drives." />
+<meta name="keywords" content="Bihar NGO, Women Empowerment Bihar, Education NGO Nawada, Social Justice NGO India, Health Camp NGO Bihar, Environment NGO Nawada" />
+<meta name="damodar das" content="Jan Shakti Sewa Samiti" />
+<title>Jan Shakti Sewa Samiti | Empowering Communities in Bihar</title>
+<style>
+    /* Reset and Base Styles */
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+      background: #fff;
+      color: #0b3d2e; /* Dark Green Text */
+    }
+    a {
+      color: #0c7b8a; /* Soft Blue */
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #064552;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header & Navigation */
+    header {
+      background-color: #f0fbf7; /* soft greenish-white */
+      padding: 10px 0;
+      border-bottom: 3px solid #0c7b8a;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #0b3d2e;
+      letter-spacing: 2px;
+    }
+    nav ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      align-items: center;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav ul li a {
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 8px 12px;
+      display: inline-block;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+      background-color: #0c7b8a;
+      color: #fff;
+      border-radius: 5px;
+    }
+    /* Responsive Navigation (hamburger) - optional */
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 450px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(11, 61, 46, 0.7);
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .hero-content h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+    }
+    .btn-primary, .btn-secondary {
+      font-weight: 600;
+      padding: 12px 30px;
+      border-radius: 25px;
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+      min-width: 140px;
+      margin: 0 8px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary {
+      background-color: #0b3d2e;
+      color: white;
+    }
+    .btn-primary:hover {
+      background-color: #076137;
+    }
+    .btn-secondary {
+      background-color: #0c7b8a;
+      color: white;
+    }
+    .btn-secondary:hover {
+      background-color: #064552;
+    }
+
+    /* Impact Stats */
+    .stats {
+      background-color: #e0f3f4;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 30px 15px;
+      margin-top: -50px;
+      border-radius: 15px;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 20px;
+    }
+    .stat-card {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+      flex: 1 1 180px;
+      text-align: center;
+      color: #0b3d2e;
+    }
+    .stat-card h3 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .stat-card p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 60px 20px 40px;
+    }
+    section h2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #0b3d2e;
+      margin-bottom: 1rem;
+      letter-spacing: 1.5px;
+    }
+    section p {
+      max-width: 900px;
+      margin: 1rem auto;
+      font-size: 1.05rem;
+      font-weight: 400;
+      text-align: justify;
+      color: #0b3d2e;
+      line-height: 1.8;
+    }
+    /* Program Cards */
+    .programs {
+      max-width: 1100px;
+      margin: 20px auto;
+      display: grid;
+      gap: 25px;
+      grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    }
+    .program {
+      background-color: #f6fcfb;
+      border-radius: 12px;
+      padding: 20px 24px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .program:hover {
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .program h3 {
+      margin-top: 0;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #0c7b8a;
+    }
+    .program p {
+      font-weight: 400;
+      font-size: 1rem;
+      color: #0b3d2e;
+      line-height: 1.6;
+    }
+
+    /* Gallery */
+    .gallery {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .gallery img,
+    .gallery video {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover,
+    .gallery video:hover {
+      transform: scale(1.05);
+    }
+
+    /* Form Styles */
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      font-size: 1rem;
+    }
+    form label {
+      font-weight: 600;
+      color: #0b3d2e;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form textarea,
+    form select {
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 1px solid #9cc3bf;
+      font-size: 1rem;
+      font-family: inherit;
+      color: #0b3d2e;
+      resize: vertical;
+    }
+    form textarea {
+      min-height: 100px;
+    }
+    form button {
+      background-color: #0b3d2e;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #076137;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #e0f3f4;
+      color: #0b3d2e;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      border-top: 3px solid #0c7b8a;
+      margin-top: 50px;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      nav ul {
+        justify-content: center;
+      }
+      .stats {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .hero {
+        height: 350px;
+      }
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      .programs {
+        grid-template-columns: 1fr;
+      }
+      .gallery img, .gallery video {
+        width: 100%;
+        height: auto;
+      }
+    }
+</style>
+</head>
+
+<body>
+
+<header class="container" role="banner">
+  <div class="logo">Jan Shakti Sewa Samiti</div>
+  <nav role="navigation" aria-label="Primary navigation">
+    <ul>
+      <li><a href="#home" aria-current="page">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#programs">Our Work</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#donate">Donate</a></li>
+      <li><a href="#volunteer">Volunteer</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#legal">Legal & Compliance</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Home / Hero Section -->
+<section id="home" class="hero" aria-label="Hero banner">
+  <div class="hero-content">
+    <h1>Empowering Communities, Enriching Lives</h1>
+    <p>Jan Shakti Sewa Samiti - Driving education, social justice, women empowerment, health, and environmental sustainability in Bihar.</p>
+    <a href="#donate" class="btn-primary" role="button">Donate Now</a>
+    <a href="#volunteer" class="btn-secondary" role="button">Join as Volunteer</a>
+  </div>
+</section>
+
+<!-- Impact Stats -->
+<div class="stats" aria-label="Impact statistics">
+  <div class="stat-card">
+    <h3>5000+</h3>
+    <p>Women Empowered</p>
+  </div>
+  <div class="stat-card">
+    <h3>3000+</h3>
+    <p>Children Educated</p>
+  </div>
+  <div class="stat-card">
+    <h3>20+</h3>
+    <p>Villages Served</p>
+  </div>
+  <div class="stat-card">
+    <h3>100+</h3>
+    <p>Health Camps Organized</p>
+  </div>
+</div>
+
+<!-- About Us -->
+<section id="about" aria-labelledby="about_title" class="container">
+  <h2 id="about_title">About Us</h2>
+  <p><strong>History:</strong> Jan Shakti Sewa Samiti was founded on 26 January 2000, registered under Societies Registration Act 1860. We are committed to creating equitable social systems inspired by Gandhian principles of peace and brotherhood.</p>
+  <p><strong>Objectives:</strong></p>
+  <ul>
+    <li>Empowering women through skill development, education, and awareness</li>
+    <li>Educating children from marginalized communities</li>
+    <li>Conducting health awareness and preventive healthcare camps</li>
+    <li>Promoting sustainable agriculture and environmental care</li>
+    <li>Supporting rural development with community-based planning</li>
+  </ul>
+  <p><strong>Founder’s Message:</strong> “We believe in the power of collective action to bring lasting social change. Together, let us build healthier, educated, and empowered communities.”</p>
+</section>
+
+<!-- Our Work -->
+<section id="programs" aria-labelledby="work_title" class="container">
+  <h2 id="work_title">Our Work / Programs</h2>
+  <div class="programs">
+    <article class="program" tabindex="0">
+      <h3>Education</h3>
+      <p>Literacy drives, free coaching centers, school material distribution for underprivileged children.</p>
+    </article>
+    <article class="program" tabindex="0">
+      <h3>Social Justice</h3>
+      <p>Awareness campaigns, legal aid, and advocacy to support marginalized communities’ rights.</p>
+    </article>
+    <article class="program" tabindex="0">
+      <h3>Women Empowerment</h3>
+      <p>Self-help groups, vocational training, health and hygiene workshops for women.</p>
+    </article>
+    <article class="program" tabindex="0">
+      <h3>Health</h3>
+      <p>Regular health check-up camps, sanitation drives, and substance abuse awareness programs.</p>
+    </article>
+    <article class="program" tabindex="0">
+      <h3>Environment</h3>
+      <p>Tree plantation drives, waste management campaigns, and promotion of organic farming.</p>
+    </article>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" aria-labelledby="gallery_title" class="container">
+  <h2 id="gallery_title">Gallery</h2>
+  <div class="gallery" aria-label="Photos and videos from NGO activities">
+    <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=400&q=80" alt="Women attending skill development workshop" />
+    <img src="https://images.unsplash.com/photo-1584367364380-634f1a188781?auto=format&fit=crop&w=400&q=80" alt="Children learning in classroom" />
+    <img src="https://images.unsplash.com/photo-1520975910840-5a1dd2307f36?auto=format&fit=crop&w=400&q=80" alt="Community health camp" />
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Tree plantation drive" />
+    <!-- Add video if available -->
+    <!-- Example:
+    <video controls aria-label="Volunteer testimonial video">
+      <source src="volunteer_story.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    -->
+  </div>
+</section>
+
+<!-- Donate Page -->
+<section id="donate" aria-labelledby="donate_title" class="container">
+  <h2 id="donate_title">Donate</h2>
+  <p>Your generous donation helps Jan Shakti Sewa Samiti make a real difference in communities across Bihar. Every rupee goes directly to supporting our projects and empowering lives.</p>
+  <h3>Donation Methods</h3>
+  <ul>
+    <li><strong>UPI:</strong> <code>jss.nawada@upi</code> (Example UPI ID, please update)</li>
+    <li><strong>Bank Transfer:</strong> <br/>Bank: Punjab National Bank, Nawada <br/>Account Name: Jan Shakti Sewa Samiti <br/>Account Number: 1234567890 (placeholder) <br/>IFSC Code: PUNB0123456</li>
+  </ul>
+  <p><em>Transparency Note:</em> We are committed to financial transparency. Annual financial reports and audit details are available on request.</p>
+  <a href="#donate" class="btn-primary" role="button" aria-label="Make a Donation">Donate Now</a>
+</section>
+
+<!-- Volunteer / Join Us Page -->
+<section id="volunteer" aria-labelledby="volunteer_title" class="container">
+  <h2 id="volunteer_title">Volunteer / Join Us</h2>
+  <p>Become a volunteer and join our mission to uplift communities through education, health, women empowerment, and environment protection.</p>
+  <form action="#" method="post" aria-label="Volunteer sign up form">
+    <label for="vname">Full Name</label>
+    <input type="text" id="vname" name="vname" required placeholder="Your Name" aria-required="true" />
+
+    <label for="vemail">Email Address</label>
+    <input type="email" id="vemail" name="vemail" required placeholder="you@example.com" aria-required="true" />
+
+    <label for="vphone">Phone Number</label>
+    <input type="tel" id="vphone" name="vphone" pattern="[0-9]{10}" placeholder="9973113114" aria-required="true" required />
+
+    <label for="vinterest">Area of Interest</label>
+    <select id="vinterest" name="vinterest" required aria-required="true">
+      <option value="">--Select an area--</option>
+      <option value="education">Education</option>
+      <option value="women_empowerment">Women Empowerment</option>
+      <option value="health">Health</option>
+      <option value="environment">Environment</option>
+      <option value="social_justice">Social Justice</option>
+    </select>
+
+    <button type="submit">Sign Up to Volunteer</button>
+  </form>
+</section>
+
+<!-- Contact Us -->
+<section id="contact" aria-labelledby="contact_title" class="container">
+  <h2 id="contact_title">Contact Us</h2>
+  <p>Phone: <a href="tel:+919973113114">99731 13114</a></p>
+  <p>Email: <a href="mailto:jss.sirdala@gmail.com">jss.sirdala@gmail.com</a></p>
+  <p>Address: Jan Shakti Sewa Samiti, Sirdala, Nawada, Bihar, India - 805127</p>
+
+  <form action="#" method="post" aria-label="Contact inquiry form">
+    <label for="cname">Full Name</label>
+    <input type="text" id="cname" name="cname" required placeholder="Your Name" aria-required="true" />
+
+    <label for="cemail">Email Address</label>
+    <input type="email" id="cemail" name="cemail" required placeholder="you@example.com" aria-required="true" />
+
+    <label for="cmessage">Message</label>
+    <textarea id="cmessage" name="cmessage" required aria-required="true" placeholder="Your message here..."></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Legal & Compliance -->
+<section id="legal" aria-labelledby="legal_title" class="container">
+  <h2 id="legal_title">Legal & Compliance</h2>
+  <p><strong>Registration:</strong> Registered under Society Registration Act, 1860 - Registration Number: 917 (Year 2002-2003) at Patna, Bihar.</p>
+  <p><strong>PAN:</strong> AAATJ7085L</p>
+  <p><strong>12A and 80G:</strong> Provisional approval received (Form No. 10AC) valid from AY 2026-27 to AY 2028-29.</p>
+  <p><em>All documents and compliance certificates are available on request.</em></p>
+  <!-- Optionally link to scanned document PDFs -->
+  <!-- <a href="documents/society_registration_certificate.pdf" target="_blank" rel="noopener noreferrer">Download Registration Certificate (PDF)</a> -->
+</section>
+
+<footer>
+  <p>© 2024 Jan Shakti Sewa Samiti. All rights reserved. | <a href="#contact">Contact</a></p>
+</footer>
+
+</body>
+</html>
